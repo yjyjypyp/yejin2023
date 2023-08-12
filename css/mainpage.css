@@ -1,19 +1,4 @@
 /* animation */
-@font-face {
-	font-family: 'Junction';
-	font-style: light;
-	src:url('./webfont/junction-light.woff'), format("woff")';
-}
-@font-face {
-	font-family: 'Junction';
-	font-style: regular;
-	src:url('./webfont/junction-regular.woff'), format("woff")';
-}
-@font-face {
-	font-family: 'Junction';
-	font-style: bold;
-	src:url('./webfont/junction-bold.woff'), format("woff")';
-}
 html {
   scroll-behavior: smooth;
 }

@@ -33,6 +33,8 @@ input[id="popup"]:checked + label + div + div {
 }
 input[id="popup"] + label + div + div > div {
 	/*--오렌지 전체 팝업--*/
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
 	position: absolute;
 	top: 48.5%;
 	left: 50%;
@@ -47,8 +49,10 @@ input[id="popup"] + label + div + div > div {
 	opacity: 95%;
 	border-radius: 100px 100px 100px 100px;
 	z-index: 20;
-	::selection {color: #e600ff; background: #000000;}
 }
+	-moz-::selection {color: #e600ff; background: #000000;}
+	::selection {color: #e600ff; background: #000000;}
+
 input[id="popup"] + label + div + div > div:hover {
 	cursor: help;
 }

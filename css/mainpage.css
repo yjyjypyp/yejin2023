@@ -7,7 +7,7 @@ body {
     -webkit-overflow-scrolling: touch;
     margin: 0;
   background: #000000;
-  font-family: "Junction";
+  font-family: 'Junction', sans-serif;
   font-size: 15px;
     transition: background .5s;
 }

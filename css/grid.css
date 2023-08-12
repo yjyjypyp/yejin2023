@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background: #000000;
-  font-family: "Junction";
+  font-family: "Junction", sans-serif;
   font-size: 15px;
 }
 .container {
@@ -206,10 +206,10 @@ p1 {
   font-weight: 300;
 }
 p2 {
-	font-family: apple gothic;
+	font-family: 'IBM Plex Sans KR';
   font-size: 0.96em;
   line-height: 1.38em;
-  font-weight: 300;
+  font-weight: 200;
 }
 .info4_kor {
   grid-area: k;

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background: #000000;
-  font-family: "Junction";
+  font-family: "Junction", sans-serif;
   font-size: 15px;
 }
 .container {
@@ -241,6 +241,7 @@ p2 {
 	/*border: 1px solid blue;*/
 }
 	.discription {
+		font-family: 'junction'
 		margin-top: 15vh;
 		margin-bottom: 4vh;
 	}

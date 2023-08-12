@@ -1,4 +1,8 @@
 /* animation */
+@font-face {
+	font-family: junction;
+	url(./webfont) format(woff)
+}
 html {
   scroll-behavior: smooth;
 }

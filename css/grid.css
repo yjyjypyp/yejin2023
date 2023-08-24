@@ -1,8 +1,22 @@
 body {
+scroll-behavior: smooth;
+-webkit-overflow-scrolling: touch;
   margin: 0;
   background: #000000;
   font-family: "Junction", sans-serif;
   font-size: 15px;
+}
+::-webkit-scrollbar{
+	display: none;
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background-color: #000000;
+	border: 0.1px solid rgba(255, 255, 255, 20%);
+}
+::-webkit-scrollbar-thumb{
+	background-color: rgba(255, 255, 255, 15%);
+	border-radius: 100px;
 }
 .container {
   height: auto; /*viewport height*/
@@ -10,15 +24,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*border: 1px solid green;*/
 }
+-moz-::selection {color: #E5B2FF; background: #ff351a;}
+::selection {color: #E5B2FF; background: #ff351a;}
 .navigator {
 	display: flex;
 	flex-direction: column;
   position: fixed;
   justify-content: center;
   width: 100vw;
-  padding: 5px;
+	padding: 5px;
 	padding-top: 15px;
 	padding-bottom: 0px;
 	padding-left: 3.1vw;
@@ -26,7 +41,14 @@ body {
 	color: #ffffff;
   background-color: rgba(0, 0, 0, 90%);
 	z-index: 25;
-	/*--border: 1px solid purple;--*/
+}
+.justforline {
+	display: flex;
+	width: 100%;
+	height: 0.5px;
+	margin-top: 5px;
+	background-color: #ffffff;
+	border-bottom: 0.5px solid #ffffff;
 }
 .fixbottom {
 	display: flex;
@@ -34,7 +56,7 @@ body {
 	position: fixed;
 	width: 20%;
 	max-width: 20%;
-	height: 3vh;
+	top: 3vh;
 	bottom: 0px;
 	left: 78vw;
 	align-items: flex-end;
@@ -76,9 +98,9 @@ pcopyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+	width: 94vw;
 	padding-top: 1.5vh;
   padding-bottom: 1.5vh;
-  /*--border: 1px solid blue;--*/
 }
 .menu_list {
   display: flex;
@@ -86,14 +108,13 @@ pcopyright {
   justify-content: space-between;
   align-items: center;
   width: 22vw;
-	/*--border: 1px solid white;--*/
+	/*border: 1px solid white;*/
 }
 .eachmenu {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-	font-size: 1rem;
 }
 .submenu {
   display: flex;
@@ -112,7 +133,7 @@ pcopyright {
 	display: block;
 	flex-direction: column;
 	justify-content:space-between;
-	align-items:flex-start;
+	align-items: flex-start;
 	/*margin-left: 1vw;*/
 	/*border: 1px solid green;*/
 }
@@ -122,6 +143,8 @@ pcopyright {
 	color: #ffffff;
 	border: 1px solid rgba(255, 255, 255, 0%);
 	border-radius: 20px;
+	font-family: 'Junction', sans-serif;
+	font-size: 1rem;
 	font-weight: 100;
 	transition: all 0.4s;
 	/*--text-transform: uppercase;*/
@@ -130,8 +153,8 @@ pcopyright {
 	outline: none;
 }
 .btn:hover {
-	margin-bottom: 0.1vh;
-	margin-left: 0.1vw;
+	/*margin-bottom: 0.1vh;*/
+	/*margin-left: 0.1vw;*/
 	color: #ffffff;
 	border: 1px solid #ffffff;
 	cursor: pointer;
@@ -175,6 +198,7 @@ h0 {
   grid-template-areas:
   't t t t t t n n e e e e e k k k k k'
 }
+
 .info {
 	/*border: 1px solid green;*/
 }
@@ -196,6 +220,16 @@ h1 {
 .dash {
 	display: none;
 }
+.dash1{
+	display: none;
+	text-align: left;
+	width: 40%;
+	}
+.dash2 {
+		display: none;
+	width: 40%;
+	transform: rotateY(180deg);
+	}
 p0 {
   font-size: 0.85em;
   line-height: 1.4em;
@@ -218,39 +252,102 @@ p2 {
 @media (min-width: 1024px) {
 	/*--pc css--*/
 }
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 	/*--tablet css--*/
+	.discription {
+  font-size: 15px;
+  margin-bottom: 4vh;
+  margin-top: 24vh;
+	color: #ffffff;
+	/*border: 1px solid blue;*/
+  /*border: 1px solid purple;*/
+}
+	.info_grid {
+  display: grid;
+  width: 90vw;
+  padding: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1.8rem;
+  grid-template-areas:
+'t t'
+'e k'
+	}
+	.dash {
+	display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 1vh;
+		margin-bottom: 0.25vh;
+		font-size: 0.1em;
+		/*border: 1px solid red;*/
+	}
+}
+@media (max-width: 767px) {
+	/*-mobile css-*/
 	h0 {
 		font-size: 1.5rem;
 	}
 	.btn {
-		font-size: 1.5rem;
+		font-size: 1rem;
+	}
+	.menu {
+		padding-right: 5px;
+		padding-left: 5px;
 	}
 	.menu_list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 30vw;
-		font-size: 1.5em;
-		padding-right: 10px;
-	/*--border: 1px solid white;--*/
+  width: 34vw;
+	}
+	.submenu {
+		justify-content: center;
 	}
 	.buttonboundary {
-	width: 40vw;
+	width: 100vw;
 	/*border: 1px solid blue;*/
 }
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/*margin-left: 1vw;*/
+	/*border: 1px solid green;*/
+}
+.btn {
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	margin-left: 2.5vw;
+	margin-right: 2.5vw;
+	padding-top: 5px;
+	background-color: rgba(0, 0, 0, 0%);
+	color: #ffffff;
+	border: 1px solid rgba(255, 255, 255, 0%);
+	border-radius: 20px;
+	font-family: 'Junction', sans-serif;
+	font-size: 0.5rem;
+	font-weight: 100;
+	text-align: center;
+	transition: all 0.4s;
+	/*--text-transform: uppercase;*/
+}
 	.discription {
-		font-family: 'junction'
-		margin-top: 15vh;
+		font-family: 'junction', sans-serif;
+		margin-top: 16vh;
 		margin-bottom: 4vh;
+		width: 90vw;
+		/*border: 1px solid blue;*/
 	}
 	.info_grid {
   display: grid;
-  width: 94vw;
+  width: 90vw;
   padding: 5px;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(100px, auto);
   grid-gap: 1.8rem;
   grid-template-areas:
 't t'
@@ -263,6 +360,8 @@ p2 {
 	}
 	.info {
 		align-items: center;
+		width: 100%;
+		/*border: 1px solid blue;*/
 	}
 	.dash {
 	display: flex;
@@ -274,16 +373,23 @@ p2 {
 		font-size: 0.1em;
 		/*border: 1px solid red;*/
 	}
-	.dash1{
-		text-align: left;
-		width: 40%;
+	h0 {
+  font-size: 1rem;
 	}
-	.dash2 {
-		width: 40%;
-		transform: rotateY(180deg);
+	h1 {
+		font-size: 1.6em;
+ 		 line-height: 1.2em;
+  		font-weight: normal;
 	}
-}
-@media (max-width: 767px) {
-	/*-mobile css-*/
+	p1 {
+  	font-size: 1em;
+  	line-height: 1.3em;
+  	font-weight: 300;
+	}
+	p2 {
+	font-family: 'IBM Plex Sans KR', sans-serif;
+  	font-size: 0.9em;
+  	line-height: 1.5em;
+  	font-weight: 200;
 	}
 }

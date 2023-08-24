@@ -1,18 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
-.3dabout {
-}
 input[id="popup"] {
 	display: none;
 }
 input[id="popup"] + label {
 	display: inline-block;
-	pading: 20px;
 	border-radius: 25%;
 	color: #ffffff;
 }
 input[id="popup"] + label:hover {
 	cursor: pointer;
+	color: #ff351a;
 	text-decoration: line-through;
 }
 input[id="popup"] + label + div {
@@ -34,6 +32,8 @@ input[id="popup"]:checked + label + div {
 }
 input[id="popup"] + label + div > div {
 	/*--오렌지 전체 팝업--*/
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
 	position: absolute;
 	top: 48.5%;
 	left: 50%;
@@ -45,10 +45,13 @@ input[id="popup"] + label + div > div {
 	padding-top: 8vh;
 	padding-bottom: 8vh;
 	background: #ff351a;
+	opacity: 95%;
 	border-radius: 100px 100px 100px 100px;
 	z-index: 20;
-	::selection {color: #e600ff; background: #000000;}
 }
+	input[id="popup"] + label + div > div -moz-::selection {color: #e600ff; background: #000000;}
+	input[id="popup"] + label + div > div ::selection {color: #e600ff; background: #000000;}
+
 input[id="popup"] + label + div > div:hover {
 	cursor: help;
 }
@@ -83,9 +86,6 @@ input[id="popup"] + label + div > label {
 	color: #ff351a;
 	font-weight: 500;
 }
-.close:hover {
-	cursor: pointer;
-}
 ptitle {
 	font-size: 1.5rem;
 }
@@ -113,6 +113,7 @@ ptitle {
 }
 .item a {
 	text-decoration: none;
+	color: #000000;
 }
 .item plink {
 	color: #000000;
@@ -134,16 +135,36 @@ ptitle {
 	/*--예진최는 하는 설명부분--*/
 	grid-area: b
 }
+.menu .about2 a:link {
+	color: #000000;
+}
+.menu .about2 a:visited {
+	color: #000000;
+}
 .about3 {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 	height: 100%;
+	/*border: 1px solid blue;*/
 	grid-area: z
 }
-.about3 hr {
-	border-width: 1px 0px 0px 0px;
+.aboutline {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	height: 50%;
+	/*border: 1px solid green;*/
+}
+.heart {
+	padding-top: 2vh;
+	padding-bottom: 1.5vh;
+}
+.lineA {
+	height: 100%;
+	border-right: 1px solid black;
 }
 .about4 {
 	grid-area: d
@@ -159,7 +180,6 @@ pbody {
 .innerpassage {
 	display: flex;
 	flex-direction: column;
-	margin-left: 1vw;
 	/*border: 1px solid green;*/
 }
 .line {
@@ -180,6 +200,25 @@ pbody {
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
+		input[id="popup"] + label + div > div {
+	/*--오렌지 전체 팝업--*/
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	position: absolute;
+	top: 46.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 95vw;
+	height: 90vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+	background: #ff351a;
+	opacity: 95%;
+	border-radius: 100px 100px 100px 100px;
+	z-index: 20;
+}
 	.about_grid {
 	display: grid;
 	width: 100%;
@@ -189,14 +228,13 @@ pbody {
   	flex-direction: row;
  	 justify-content: center;
  	 align-items: center;
-	border: 1px solid purple;
 	  grid-template-areas:
  	 'b'
 	'a'	
 	}
-	.item {
-		margin-left: 7vw;
-		margin-right: 7vw;
+	.about {
+		display: flex;
+		flex-direction: row;
 	}
 	.innerpassage {
 	display: flex;
@@ -206,16 +244,30 @@ pbody {
 }
 	.line {
 		display: flex;
+		height: 5vh;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2vh;
+		/*border: 1px solid blue;*/
 	}
-	.line2 {
-		display: flex;
-		padding-top: 2.5vh;
+	.aboutline {
+		height: 100%;
 	}
-	.line hr {
-		border-width: 0px 0px 0px 0px;
+	.heart {
+		height: 100%;
 	}
-	.line2 hr {
-		border-width: 0px 0px 0px 0px;
+	.lineB {
+		width: 100%;
+		border-bottom: 1px solid black;
+	}
+	.about1 {
+		margin-left: 7vw;
+		margin-right: 7vw;
+	}
+	.about2 {
+		margin-left: 7vw;
+		margin-right: 7vw;
 	}
 	.about3 {
 		display: none;

@@ -1,0 +1,50 @@
+.contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  width: 94vw;
+  height: auto;
+  border: 1px solid green;
+}
+.scene {
+	width: 100%;
+	height: 100%;
+}
+.img_grid {
+  display: grid;
+  width: 94vw;
+  padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10vh;
+  grid-template-columns: 1fr 1fr;
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 0.5rem;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1024px) {
+	/*--pc css--*/
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	/*--tablet css--*/
+	
+}
+@media (max-width: 767px) {
+	/*-mobile css-*/
+	.img_grid {
+  display: grid;
+  width: 94vw;
+  padding: 5px;
+  grid-template-columns: repeat(2, 5fr);
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1rem;
+  grid-template-areas:
+  'a a'
+  'b b'
+	  'c d'
+}
+}

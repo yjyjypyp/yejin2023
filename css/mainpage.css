@@ -4,10 +4,9 @@ html {
 }
 body {
     height: 100%;
-    -webkit-overflow-scrolling: touch;
     margin: 0;
   background: #000000;
-  font-family: 'Junction', sans-serif;
+  font-family: 'Junction', 'Commissioner', sans-serif;
   font-size: 15px;
     transition: background .5s;
 }
@@ -198,18 +197,16 @@ pcopyright {
 	}
 	pcopyright {
 	font-size: 0.4em;
-		
-		
 }
 	.wall-content-copyright {
 	display: flex;
 	position: relative;
-	width: 70%;
-	max-width: 70%;
-	left: 28vw;
+	width: 100%;
+	max-width: 100%;
+	left: 1.5vw;
     align-items: flex-end;
     justify-content: flex-end;
-	padding-bottom: 1.5vh;
+	padding-bottom: 5vh;
 	padding-right: 1.5vw;
     height: 100%;
 	overflow-x: hidden;
@@ -233,5 +230,4 @@ pcopyright {
 		transform: translateY(calc(100% - 8rem));
 		transform: translateY(calc(100% - 8rem));
 	}
-}
 }

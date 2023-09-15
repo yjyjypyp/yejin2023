@@ -99,6 +99,7 @@ ptitle {
   	flex-direction: row;
  	 justify-content: center;
  	 align-items: flex-start;
+	/*border: 2px solid blue;*/
 	overflow: auto;
 	  grid-template-areas:
  	 'a a a a a a z b b'

@@ -47,22 +47,24 @@ ul li{
   }
     ul li a img {
       border:0;
-      width: 100%;
-      height: auto;
+      width: 100vw;
+      height: 16vh;
       opacity: 100%;
       display: block;
+		object-fit: cover;
       transition: all 0.08s;
       z-index: 1;
     }
-
     ul li:hover a img {
       /*
       width: 1240px;
       height: auto;
       */
+		height: 24vh;
       transform: scale(1.05);
       opacity: 25%;
 		cursor: move;
+		object-fit: cover;
     }
 
     ul li a .screen {
@@ -134,6 +136,13 @@ img {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 	/*--tablet css--*/
+	.contents {
+		padding-top: 10vh;
+	}
+	ul li a img {
+      width: 100vw;
+      height: 15vh;
+    }
 	ul li{
 	display: flex;
 	flex-direction: row;
@@ -172,6 +181,9 @@ img {
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
+	.contents {
+		padding-top: 5vh;
+	}
 	ul li{
 	display: flex;
 	flex-direction: row;
@@ -183,6 +195,10 @@ img {
   overflow: hidden;
 	/*--border: 1px solid green;--*/
 	}
+	ul li a img {
+      width: 100vw;
+      height: 16vh;
+    }
 	p3 {
 	font-size: 0.75em;
 	font-weight: 500;

@@ -46,7 +46,7 @@ scroll-behavior: smooth;
 	padding-left: 3.1vw;
 	padding-right: 3.1vw;
 	color: #ffffff;
-  background-color: rgba(0, 0, 0, 90%);
+  background-color: rgba(0, 0, 0, 85%);
 	z-index: 25;
 }
 .justforline {
@@ -127,7 +127,7 @@ pcopyright {
   justify-content: flex-end;
   align-items: center;
 	font-size: 0.85rem;
-	line-height: 1.25rem;
+	line-height: 6px;
   padding-bottom: 1.5vh;
 }
 .buttonboundary {

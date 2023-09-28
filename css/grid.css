@@ -308,8 +308,6 @@ p2 {
 }
 	.info_grid {
   display: grid;
-  width: 90vw;
-  padding: 5px;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1.8rem;
@@ -330,19 +328,34 @@ p2 {
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
+	.navigator {
+	display: flex;
+	flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  width: 100vw;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 3.1vw;
+	padding-right: 3.1vw;
+	color: #ffffff;
+  background-color: rgba(0, 0, 0, 85%);
+	z-index: 25;
+		/*border: 1px solid green;*/
+}
 	h0 {
 		font-size: 1.5rem;
 	}
 	.menu {
-		padding-right: 5px;
-		padding-left: 5px;
+		padding-right: 1px;
+		padding-left: 1px;
 	}
 	.menu_list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 60vw;
+  width: 53vw;
 	}
 	.submenu {
 		justify-content: center;

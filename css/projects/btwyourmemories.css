@@ -22,12 +22,19 @@
 .howtowork {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	width: 94vw;
 	padding: 5px;
+}
+.howtowork < video {
+	flex-direction: column;
+	justify-content: center;
 }
 .weboperation {
 	width: 100%;
 	padding: 5px;
+	flex-direction: column;
+	justify-content: center;
 }
 .img_grid {
   display: grid;
@@ -111,4 +118,22 @@ pgrid {
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
+	.contents {
+		width: 100%;
+		justify-content: center;
+	}
+	.howtowork {
+		width: 100%;
+	}
+	.weboperation {
+		width: 100%;
+	}
+	.img_grid {
+		width: 100%;
+		grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	}
+	.moodimages {
+		padding-top: 25px;
+	}
 }

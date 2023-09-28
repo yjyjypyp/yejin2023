@@ -5,7 +5,7 @@
   align-items: center;
   width: 94vw;
   height: auto;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 .info1_title a {
 	color: #ffffff;
@@ -21,6 +21,10 @@
 	color: #ffffff;
 }
 .scene {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 	padding: 5px;
@@ -59,16 +63,14 @@
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
+	.contents {
+		width: 100%;
+	}
 	.img_grid {
-  display: grid;
-  width: 94vw;
-  padding: 5px;
-  grid-template-columns: repeat(2, 5fr);
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 1rem;
-  grid-template-areas:
-  'a a'
-  'b b'
-	  'c d'
+  width: 100%;
+		grid-template-columns: 1fr;
 }
+	.scene_grid {
+		width: 100%;
+	}
 }

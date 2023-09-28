@@ -5,13 +5,13 @@
   align-items: center;
   width: 94vw;
   height: auto;
+	padding-bottom: 10vh;
   /*border: 1px solid green;*/
 }
 .howtowork {
 	display: flex;
 	flex-direction: column;
 	width: 94vw;
-	padding: 5px;
 }
 .mainvideo {
 	position: relative;
@@ -31,7 +31,6 @@
 .scene {
   display: grid;
   width: 94vw;
-  padding: 5px;
   grid-template-columns: 1fr 1fr;
 	grid-column-gap: 0.5rem;
 	grid-row-gap: 3rem;
@@ -78,12 +77,18 @@ pgrid {
 	}
 	.howtowork {
 		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.mainvideo {
-		width: 1005;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.scene {
 		width: 100%;
 		grid-gap: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

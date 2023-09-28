@@ -6,22 +6,20 @@
   width: 94vw;
   height: auto;
  /* border: 1px solid green;*/
+	padding-bottom: 10vh;
 }
 .scene {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 94vw;
-	padding: 5px;
-	padding-bottom: 10vh;
+	padding-bottom: 15px;
 }
 .img_grid {
  display: grid;
   width: 94vw;
-  padding-left: 5px;
-	padding-right: 5px;
 	padding-bottom: 10vh;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-column-gap: 0.5rem;
 	grid-row-gap: 0.5rem;
 }
@@ -44,6 +42,8 @@
 	/*-mobile css-*/
 	.contents {
 		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.scene {
 		width: 100%;
@@ -52,6 +52,7 @@
 	}
 	.img_grid {
 		width: 100%;
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 5px;
 	}
 }

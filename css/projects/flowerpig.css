@@ -5,21 +5,19 @@
   align-items: center;
   width: 94vw;
   height: auto;
-  border: 1px solid green;
+	padding-bottom: 10vh;
+  /*border: 1px solid green;*/
 }
 .scene {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 94vw;
-	padding: 5px;
 	padding-bottom: 10vh;
 }
 .img_grid {
  display: grid;
   width: 94vw;
-  padding-left: 5px;
-	padding-right: 5px;
 	padding-bottom: 10vh;
   grid-template-columns: 1fr 1fr;
 	grid-column-gap: 0.5rem;
@@ -49,9 +47,13 @@
 		width: 100%;
 		padding-top: 0px;
 		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.img_grid {
 		width: 100%;
 		grid-gap: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

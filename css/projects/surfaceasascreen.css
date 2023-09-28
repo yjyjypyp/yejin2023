@@ -5,6 +5,7 @@
   align-items: center;
   width: 94vw;
   height: auto;
+	padding-bottom: 10vh;
   /*border: 1px solid green;*/
 }
 .scene {
@@ -13,7 +14,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 94vw;
-	padding: 5px;
+	padding-bottom: 15px;
 }
 .scene2 {
 	display: flex;
@@ -21,13 +22,11 @@
 	justify-content: center;
 	align-items: center;
 	width: 94vw;
-	padding: 5px;
 	padding-bottom: 10vh;
 }
 .img_grid2 {
   display: grid;
   width: 94vw;
-  padding: 5px;
   grid-template-columns: 1fr 1fr;
 	grid-column-gap: 0.5rem;
 	grid-row-gap: 0.5rem;
@@ -51,6 +50,8 @@
 	/*-mobile css-*/
 	.contents {
 		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.scene {
 		width: 100%;
@@ -61,7 +62,6 @@
 	.img_grid2 {
   display: grid;
   width: 100%;
-  padding: 5px;
   grid-template-columns: repeat(2, 5fr);
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 0.5rem;

@@ -4,6 +4,7 @@
   align-items: center;
   width: 94vw;
   height: auto;
+	padding-bottom: 10vh;
   /*border: 1px solid green;*/
 }
 .scenelist {
@@ -38,8 +39,10 @@
 		width: 100%;
 	}
 	.scene {
-		padding-left: 5px;
-		padding-right: 5px;
-		padding-bottom: 0px;
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

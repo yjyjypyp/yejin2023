@@ -5,22 +5,26 @@
   align-items: center;
   width: 94vw;
   height: auto;
+	padding-bottom: 10vh;
 }
 .scene {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 94vw;
-	padding: 5px;
+}
+.sceneitem {
+	padding-bottom: 15px;
 }
 .img_grid {
  display: grid;
   width: 94vw;
-  padding: 5px;
-	padding-bottom: 10vh;
   grid-template-columns: 1fr 1fr;
 	grid-column-gap: 0.5rem;
 	grid-row-gap: 0.5rem;
+	padding-top: 0px;
+	padding-bottom: 15px;
 }
 .image {
   width: 100%;
@@ -44,11 +48,14 @@
 		width: 100%;
 		grid-template-columns: 1fr;
 		grid-gap: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
+	.sceneitem {}
 	.img_grid {
 		width: 100%;
 		grid-gap: 5px;
-		padding-top: 0px;
-		padding-bottom: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

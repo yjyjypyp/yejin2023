@@ -1,6 +1,7 @@
 .contents {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 10vh;
 }
 .scene {
 	display: flex;
@@ -8,14 +9,20 @@
 	justify-content: center;
 	align-items: center;
 	width: 94vw;
-	padding: 5px;
+	padding-top: 15px;
+	paddin-bottom: 15px;
 }
 .scene > image {
 	padding-bottom: 5px;
 }
-.imageslide {
+.section {
 	width: 94vw;
-	padding: 5px;
+	padding-top: 5px;
+	align-items: center;
+	justify-content: center;
+}
+.text1 {
+	display: none;
 }
 /* INPUT 가리기 */
 	.section input[id*="slide"] {display:none;}
@@ -110,6 +117,8 @@
 }
 @media (min-width: 1024px) {
 	/*--pc css--*/
+	.scene {
+	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 	/*--tablet css--*/
@@ -136,6 +145,10 @@
 	/*-mobile css-*/
 	.scene {
 		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.img_grid {
   display: grid;
@@ -158,8 +171,7 @@
 	  'k'
 	  'l'
 	}
-	.imageslide {
+	.section {
 	width: 100%;
-	padding: 5px;
 }
 }

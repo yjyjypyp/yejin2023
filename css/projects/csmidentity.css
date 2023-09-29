@@ -114,6 +114,10 @@
 .image4 {
   grid-area: d;
 }
+.image5 {
+	width: 100%;
+	padding: 0px;
+}
 .text {
 	display: none;
 	/*display: flex;*/

@@ -10,6 +10,7 @@ scroll-behavior: smooth;
 	overflow-x: hidden;
   margin: 0;
   background: #000000;
+	font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 15px;
 }
 ::-webkit-scrollbar{
@@ -126,6 +127,7 @@ pcopyright {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+	font-family: 'Junction', 'PT Sans', sans-serif;
 	font-size: 0.85rem;
 	line-height: 6px;
   padding-bottom: 1.5vh;
@@ -198,6 +200,7 @@ h0 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 15px;
   margin-bottom: 4vh;
   margin-top: 22vh;
@@ -420,13 +423,16 @@ pbutton {
 		/*border: 1px solid red;*/
 	}
 	h0 {
+	font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 1rem;
 	}
 	h1 {
+		font-family: 'Junction', 'PT Sans', sans-serif;
 		font-size: 1.6em;
  		 line-height: 1.2em;
 	}
 	p1 {
+	font-family: 'Junction', 'PT Sans', sans-serif;
   	font-size: 1em;
   	line-height: 1.3em;
 	}

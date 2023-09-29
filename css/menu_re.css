@@ -189,7 +189,7 @@ img {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-  width: 94vw;
+  width: 96vw;
 	padding-top: 2%;
 	padding-bottom: 2%;
   overflow: hidden;
@@ -221,6 +221,7 @@ img {
 	font-size: 0.6rem;
 	}
 	.list {
+		width: 98vw;
 		margin-top: 10vh;
 	}
 }

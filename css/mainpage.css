@@ -6,7 +6,7 @@ body {
     height: 100%;
     margin: 0;
   background: linear-gradient(to bottom, #ffffff, #ceff55, #ceff55, #ceff55, #ceff55, #ceff55, #ceff55, #ffffff);
-  font-family: 'Junction', 'Commissioner', sans-serif;
+  font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 12px;
     transition: background .5s;
 }

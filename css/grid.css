@@ -9,7 +9,7 @@ scroll-behavior: smooth;
 	overflow-x: hidden;
   margin: 0;
   background: #000000;
-  font-family: "Junction", sans-serif;
+  font-family: 'Junction', sans-serif;
   font-size: 15px;
 }
 ::-webkit-scrollbar{
@@ -135,7 +135,7 @@ pcopyright {
 	/*border: 1px solid blue;*/
 }
 .buttons {
-	display:contents;
+	display: contents;
 	flex-direction: row;
 	/*margin-left: 1vw;*/
 	/*border: 1px solid green;*/
@@ -146,7 +146,7 @@ pcopyright {
 	color: rgba(2255, 255, 255, 50%);
 	border: 0px solid rgba(255, 255, 255, 30%);
 	border-radius: 20px;
-	font-family: 'Junction', sans-serif;
+	font-family: "Junction", sans-serif;
 	text-align: center;
 	justify-content: center;
 	text-decoration: none;
@@ -389,7 +389,6 @@ pbutton {
 	}
 	.info_grid {
   display: grid;
-  width: 90vw;
   padding: 5px;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);

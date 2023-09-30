@@ -41,21 +41,31 @@ scroll-behavior: smooth;
   position: fixed;
   justify-content: center;
   width: 100vw;
-	padding: 5px;
-	padding-top: 15px;
-	padding-bottom: 0px;
-	padding-left: 3.1vw;
-	padding-right: 3.1vw;
+	height: 15.5vh;
+	padding-left: 2.9vw;
+	padding-right: 2.9vw;
 	color: #ffffff;
-  background-color: rgba(0, 0, 0, 85%);
+	background-color: rgba(0, 0, 0, 85%);
 	z-index: 25;
+	/*border: 1px solid green;*/
+}
+.navigator_line {
+	width: 100%;
+	height: 15.5vh;
+		padding-top: 15px;
+	padding-bottom: 0px;
+	background-color: rgba(0, 0, 0, 0%);
+	border-bottom: 0.25px solid #ffffff;
+}
+.blank_navigator {
+	display: flex;
+	height: 15vh;
 }
 .justforline {
+	display: none;
 	width: 100%;
-	height: 0.5px;
-	margin-top: 5px;
+	height: 5px;
 	background-color: rgba(255, 255, 255, 30%);
-	border-bottom: 0.3px solid rgba(255, 255, 255, 30%);
 }
 .fixbottom {
 	display: flex;
@@ -105,7 +115,7 @@ pcopyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-	width: 94vw;
+	width: 100%;
 	padding-top: 0.5vh;
   padding-bottom: 0.5vh;
 }
@@ -114,8 +124,6 @@ pcopyright {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 25vw;
-	/*border: 1px solid white;*/
 }
 .eachmenu {
   display: flex;
@@ -133,8 +141,7 @@ pcopyright {
   padding-bottom: 1.5vh;
 }
 .buttonboundary {
-	width: 25.5vw;
-	/*border: 1px solid blue;*/
+	/*border: 1px solid purple;*/
 }
 .buttons {
 	display: contents;
@@ -202,8 +209,8 @@ h0 {
 	justify-content: center;
 	font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 15px;
+	margin-top: 4vh;
   margin-bottom: 4vh;
-  margin-top: 22vh;
 	color: #ffffff;
   /*border: 1px solid purple;*/
 }
@@ -296,16 +303,9 @@ p2 {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
 	/*--tablet css--*/
-	.menu_list {
-		width: 40vw;
-	}
-	.buttonboundary {
-	width: 40vw;
-}
 	.discription {
   font-size: 15px;
   margin-bottom: 4vh;
-  margin-top: 24vh;
 	color: #ffffff;
 	/*border: 1px solid blue;*/
   /*border: 1px solid purple;*/
@@ -337,59 +337,35 @@ p2 {
 	flex-direction: column;
   position: fixed;
   justify-content: center;
-  width: 100vw;
+  width: 98vw;
+		height: 14vh;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding-left: 3.1vw;
 	padding-right: 3.1vw;
 	color: #ffffff;
-  background-color: rgba(0, 0, 0, 85%);
 	z-index: 25;
 		/*border: 1px solid green;*/
 }
+	.navigator_line {
+		width: 100%;
+		height: 14vh;
+	}
 	h0 {
 		font-size: 1.5rem;
 	}
-	.menu {
-		padding-right: 1px;
-		padding-left: 1px;
-	}
-	.menu_list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 53vw;
-	}
-	.submenu {
-		justify-content: center;
-		padding-bottom: 0.3vh;
-	}
-	.buttonboundary {
-	width: 100vw;
-}
-.buttons {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	justify-content: center;
-	align-items: center;
-	/*margin-left: 1vw;*/
-	/*border: 1px solid green;*/
-}
-	.btn {
-	padding: 0.3vh 0.6vw;
-		text-align: left;
-	}
 pbutton {
-	font-size: 0.8rem;
-	font-weight: 100;
+	/*font-size: 0.8rem;*/
+	/*font-weight: 100;*/
 }
 	.discription {
 		font-family: 'junction', sans-serif;
-		margin-top: 20vh;
+		margin-top: 2vh;
 		margin-bottom: 4vh;
 		width: 90vw;
 		/*border: 1px solid blue;*/
+	}
+	.submenu {
 	}
 	.info_grid {
   display: grid;
@@ -423,21 +399,17 @@ pbutton {
 		/*border: 1px solid red;*/
 	}
 	h0 {
-	font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 1rem;
 	}
 	h1 {
-		font-family: 'Junction', 'PT Sans', sans-serif;
 		font-size: 1.6em;
  		 line-height: 1.2em;
 	}
 	p1 {
-	font-family: 'Junction', 'PT Sans', sans-serif;
   	font-size: 1em;
   	line-height: 1.3em;
 	}
 	p2 {
-	font-family: 'IBM Plex Sans KR', sans-serif;
   	font-size: 0.9em;
   	line-height: 1.5em;
   	font-weight: 200;

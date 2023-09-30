@@ -23,7 +23,6 @@ html {
 	align-items: flex-start;
 	justify-content: center;
 	width: 94vw;
-	margin-top: 20vh;
 	margin-bottom: 10vh;
 	/*border: 1px solid green;*/
 }
@@ -139,9 +138,6 @@ img {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 	/*--tablet css--*/
-	.contents {
-		padding-top: 10vh;
-	}
 	ul li a img {
       width: 100vw;
       height: 15vh;
@@ -178,15 +174,9 @@ img {
 	text-align: center;
 	font-size: 0.6rem;
 	}
-	.list {
-		margin-top: 10vh;
-	}
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
-	.contents {
-		padding-top: 10vh;
-	}
 	ul li{
 	display: flex;
 	flex-direction: row;
@@ -225,6 +215,5 @@ img {
 	}
 	.list {
 		width: 98vw;
-		margin-top: 10vh;
 	}
 }

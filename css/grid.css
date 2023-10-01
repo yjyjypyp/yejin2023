@@ -160,6 +160,7 @@ pcopyright {
 }
 pbutton {
 	font-size: 1rem;
+	line-height: 0.8rem;
 	font-weight: 100;
 }
 .btn:hover pbutton {
@@ -191,9 +192,8 @@ h0 {
   align-items: center;
 	width: 94vw;
 	height: auto;
-	margin-top: 15vh;
+	margin-top: 16vh;
 	padding-bottom: 10vh;
-	  border: 1px solid purple;
 }
 .discription {
 	display: flex;
@@ -325,7 +325,7 @@ p2 {
 		font-size: 1.5rem;
 	}
 	.contents {
-		margin-top: 16.5vh;
+		margin-top: 17.5vh;
 	}
 	.discription {
 		font-family: 'junction', sans-serif;
@@ -344,7 +344,7 @@ p2 {
 	}
 	.buttons_01 {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 	}
 	.info_grid {
   display: grid;

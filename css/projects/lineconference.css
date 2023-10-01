@@ -1,12 +1,4 @@
-.contents {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-  align-items: center;
-  width: 94vw;
-  height: auto;
-	padding-bottom: 10vh;
-}
+
 .scene {
 	display: flex;
 	flex-direction: column;
@@ -40,9 +32,6 @@
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
-	.contents {
-		width: 100%;
-	}
 	.scene {
 		display: grid;
 		width: 100%;

@@ -1,13 +1,3 @@
-.contents {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-  align-items: center;
-  width: 94vw;
-  height: auto;
-  /*border: 1px solid green;*/
-	padding-bottom: 10vh;
-}
 .scene {
 	display: flex;
 	flex-direction: column;
@@ -37,11 +27,6 @@
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
-	.contents {
-		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
 	.scene {
 		width: 100%;
 	}

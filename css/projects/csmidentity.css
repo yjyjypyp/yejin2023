@@ -1,13 +1,3 @@
-.contents {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-  align-items: center;
-  width: 94vw;
-  height: auto;
-	padding-bottom: 10vh;
-  /*border: 1px solid green;*/
-}
 .img_grid {
   display: grid;
   width: 94vw;
@@ -147,11 +137,6 @@ pgrid {
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
-	.contents {
-		width: 100vw;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
 	.item {
 		padding-bottom: 5px;
 	}

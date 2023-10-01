@@ -51,10 +51,6 @@ scroll-behavior: smooth;
 	border-bottom: 0.25px solid #ffffff;
 	padding-bottom: 0px;
 }
-.blank_navigator {
-	display: flex;
-	height: 15vh;
-}
 .fixbottom {
 	display: flex;
 	flex-direction: column;
@@ -130,7 +126,7 @@ pcopyright {
 .buttonboundary {
 	display: block;
 	margin-bottom: 15px;
-	border: 1px solid purple;
+	/*border: 1px solid purple;*/
 }
 .buttons {
 	display: contents;
@@ -190,8 +186,14 @@ h0 {
 }
 .contents {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	justify-content: center;
+  align-items: center;
+	width: 94vw;
+	height: auto;
+	margin-top: 15vh;
+	padding-bottom: 10vh;
+	  border: 1px solid purple;
 }
 .discription {
 	display: flex;
@@ -199,10 +201,8 @@ h0 {
 	justify-content: center;
 	font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 15px;
-	margin-top: 4vh;
   margin-bottom: 4vh;
 	color: #ffffff;
-  /*border: 1px solid purple;*/
 }
 .info_grid {
   display: grid;
@@ -320,19 +320,31 @@ p2 {
 	}
 }
 @media (max-width: 767px) {
-	.blank_navigator {
-	height: 17vh;
-}
 	/*-mobile css-*/
 	h0 {
 		font-size: 1.5rem;
 	}
+	.contents {
+		margin-top: 16.5vh;
+	}
 	.discription {
 		font-family: 'junction', sans-serif;
-		margin-top: 2.5vh;
 		margin-bottom: 4vh;
 		width: 90vw;
 		/*border: 1px solid blue;*/
+	}
+	.icons {
+		display: none;
+	}
+	.submenu {
+		 justify-content: center;
+	}
+	.buttonboundary {
+		justify-content: center;
+	}
+	.buttons_01 {
+		display: flex;
+		justify-content: center;
 	}
 	.info_grid {
   display: grid;

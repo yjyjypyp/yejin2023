@@ -51,13 +51,6 @@ scroll-behavior: smooth;
 	border-bottom: 0.25px solid #ffffff;
 	padding-bottom: 0px;
 }
-.navigator_line {
-	position: relative;
-	width: 94vw;
-	padding-bottom: 0px;
-	background-color: rgba(0, 0, 0, 0%);
-	/*border-bottom: 0.25px solid #ffffff;*/
-}
 .blank_navigator {
 	display: flex;
 	height: 15vh;
@@ -327,6 +320,9 @@ p2 {
 	}
 }
 @media (max-width: 767px) {
+	.blank_navigator {
+	height: 17vh;
+}
 	/*-mobile css-*/
 	h0 {
 		font-size: 1.5rem;

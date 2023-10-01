@@ -13,6 +13,16 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Mooli&family=PT+Sans&display=swap" rel="stylesheet">
+	
+	<script>
+		if (window.matchMedia("(min-width: 768px)").matches) {
+			// 모바일 기기가 아닌 경우에만 스크립트 로드
+      var script = document.createElement('script');
+      script.src = 'js/wall3d.js'; // 스크립트 파일 경로
+      script.async = true; // 비동기적으로 로드할지 여부
+      document.head.appendChild(script);
+    }å
+	</script>
 </head>
 <body>
 <div class="world">
@@ -423,7 +433,7 @@ She studied entertainment design espetially focusing on moving images in her BA,
 </div>
 <!--// world -->
 
-<script src="js/wall3d.js"></script>
+<!--<script src="js/wall3d.js"></script>-->
 <script>
 (function () {
     const useragent = window.navigator.userAgent.toLowerCase();

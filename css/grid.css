@@ -32,34 +32,35 @@ scroll-behavior: smooth;
   flex-direction: column;
   align-items: center;
 	overflow-x: hidden;
-}
--moz-::selection {color: #E5B2FF; background: #ff351a;}
+	-moz-::selection {color: #E5B2FF; background: #ff351a;}
 ::selection {color: #E5B2FF; background: #ff351a;}
+}
 .navigator {
-	display: flex;
+	display: inline;
 	flex-direction: column;
   position: fixed;
   justify-content: center;
   width: 100vw;
-	height: 13vh;
 	padding-left: 2.9vw;
 	padding-right: 2.9vw;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 85%);
 	z-index: 25;
-	/*border: 1px solid green;*/
+}
+.justforline {
+	border-bottom: 0.25px solid #ffffff;
+	padding-bottom: 0px;
 }
 .navigator_line {
 	position: relative;
 	width: 94vw;
-	height: 13vh;
 	padding-bottom: 0px;
 	background-color: rgba(0, 0, 0, 0%);
-	border-bottom: 0.25px solid #ffffff;
+	/*border-bottom: 0.25px solid #ffffff;*/
 }
 .blank_navigator {
 	display: flex;
-	height: 13vh;
+	height: 15vh;
 }
 .fixbottom {
 	display: flex;
@@ -134,8 +135,9 @@ pcopyright {
 	line-height: 6px;
 }
 .buttonboundary {
+	display: block;
 	margin-bottom: 15px;
-	/*border: 1px solid purple;*/
+	border: 1px solid purple;
 }
 .buttons {
 	display: contents;
@@ -292,7 +294,6 @@ p2 {
 	from {transform: translateX(100%);}
 	to {transform: translateX(-55%);}
 }
-
 @media (min-width: 1024px) {
 	/*--pc css--*/
 }

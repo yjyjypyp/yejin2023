@@ -7,7 +7,8 @@ input[id="popup2"] {
 input[id="popup2"] + label {
 	display: inline-block;
 	padding: 20px;
-	padding-right: 6vw;
+	padding-left: 3.6vw;
+	padding-right: 7.2vw;
 	border-radius: 25%;
 }
 input[id="popup2"] + label h0:hover {
@@ -196,6 +197,10 @@ pbody3 {
 	}
 @media (max-width: 767px) {
 	/*-mobile css-*/
+	input[id="popup2"] + label {
+		padding-left: 3.5vw;
+	padding-right: 7.5vw;
+}
 	input[id="popup2"] + label + div > div {
 	/*--블루 전체 팝업--*/
 	scroll-behavior: smooth;

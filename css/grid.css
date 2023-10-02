@@ -196,7 +196,7 @@ h0 {
   align-items: center;
 	width: 94vw;
 	height: auto;
-	margin-top: 160px;
+	margin-top: 170px;
 	padding-bottom: 10vh;
 	font-family: 'Junction', 'PT Sans', sans-serif;
 }
@@ -331,7 +331,6 @@ p2 {
 	}
 	.contents {
 		width: 96vw;
-		margin-top: 160px;
 	}
 	.discription {
 		margin-bottom: 4vh;

@@ -179,7 +179,7 @@ img {
 @media (max-width: 767px) {
 	/*-mobile css-*/
 	.menu_contents {
-		margin-top: 18vh;
+		margin-top: 18.5vh;
 	}
 	ul li{
 	display: flex;

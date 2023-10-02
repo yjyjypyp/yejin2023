@@ -37,14 +37,10 @@
 		width: 100%;
 		grid-template-columns: 1fr;
 		grid-gap: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 	.sceneitem {}
 	.img_grid {
 		width: 100%;
 		grid-gap: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 }

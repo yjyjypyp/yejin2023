@@ -29,13 +29,9 @@
 	/*-mobile css-*/
 	.scene {
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
 		padding-bottom: 10px;
 	}
 	.img_grid {
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 }

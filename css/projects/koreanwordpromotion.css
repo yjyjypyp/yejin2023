@@ -64,18 +64,12 @@ pgrid {
 	/*-mobile css-*/
 	.howtowork {
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 	.mainvideo {
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 	.scene {
 		width: 100%;
 		grid-gap: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 }

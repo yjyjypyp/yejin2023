@@ -133,10 +133,14 @@ pcopyright {
 	/*border: 1px solid purple;*/
 }
 .buttons {
-	display: contents;
-	flex-direction: row;
+	display: flex;
+	flex-direction: column;
 	/*margin-left: 1vw;*/
-	/*border: 1px solid green;*/
+}
+.buttons_01 {
+	display: flex;
+	justify-content: flex-end;
+	/*border: 1px solid blue;*/
 }
 .btn {
 	padding: 4px 7px;
@@ -330,6 +334,7 @@ p2 {
 		font-size: 1.5rem;
 	}
 	.contents {
+		margin-top: 90px;
 		width: 96vw;
 	}
 	.discription {
@@ -341,6 +346,7 @@ p2 {
 		display: none;
 	}
 	.submenu {
+		display: none;
 		 justify-content: center;
 	}
 	.buttonboundary {

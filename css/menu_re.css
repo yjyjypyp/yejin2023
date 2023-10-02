@@ -21,7 +21,7 @@ html {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	width: 94vw;
+	width: 100%;
 	margin-bottom: 10vh;
 	/*border: 1px solid green;*/
 }
@@ -214,8 +214,5 @@ img {
 	.copyright {
 	text-align: center;
 	font-size: 0.6rem;
-	}
-	.list {
-		width: 98vw;
 	}
 }

@@ -47,8 +47,8 @@ pgrid {
 	grid-row-gap: 0.5rem;
 }
 .video_grid {
-  display: grid;
-  width: 94vw;
+  display: flex;
+  width: 100%;
   padding-top: 10px;
   grid-template-columns: 1fr 1fr;
 	grid-column-gap: 0.5rem;
@@ -61,6 +61,7 @@ pgrid {
   grid-template-columns: 4fr 1.5fr;
 	grid-column-gap: 0.5rem;
 	grid-row-gap: 1rem;
+	object-fit: cover;
 }
 @media (min-width: 1024px) {
 	/*--pc css--*/

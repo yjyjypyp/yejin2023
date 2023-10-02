@@ -3,6 +3,14 @@ html {
 	max-width: 100%;
 	scroll-behavior: smooth;
 }
+.onlymenu_submenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+	font-family: 'Junction', 'PT Sans', sans-serif;
+	font-size: 0.85rem;
+	line-height: 6px;
+}
 .menu_contents {
 	margin: 0;
 	margin-top: 170px;
@@ -176,6 +184,9 @@ img {
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
+	.onlymenu_submenu {
+		justify-content: center;
+	}
 	.menu_contents {
 	}
 	ul li{

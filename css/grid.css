@@ -195,6 +195,7 @@ h0 {
 	height: auto;
 	margin-top: 16vh;
 	padding-bottom: 10vh;
+	font-family: 'Junction', 'PT Sans', sans-serif;
 }
 .discription {
 	display: flex;
@@ -329,7 +330,6 @@ p2 {
 		margin-top: 18.5vh;
 	}
 	.discription {
-		font-family: 'junction', sans-serif;
 		margin-bottom: 4vh;
 		width: 90vw;
 		/*border: 1px solid blue;*/

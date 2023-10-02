@@ -45,6 +45,7 @@ scroll-behavior: smooth;
 	padding-right: 2.9vw;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 85%);
+	font-family: 'Junction', 'PT Sans', sans-serif;
 	z-index: 25;
 }
 .justforline {

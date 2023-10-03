@@ -18,9 +18,17 @@
 	padding-top: 0px;
 	padding-bottom: 15px;
 }
+.img_grid2 {
+ display: grid;
+  width: 94vw;
+  grid-template-columns: 1.456fr 1fr;
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 0.5rem;
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
 .image {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 @media (min-width: 1024px) {

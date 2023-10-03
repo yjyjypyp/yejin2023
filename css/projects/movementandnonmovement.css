@@ -1,9 +1,15 @@
 .scene {
 	width: 100%;
-	height: 100%;
 	padding-bottom: 15px;
 }
 .img_grid {
+  display: grid;
+  width: 94vw;
+	padding-bottom: 15px;
+  grid-template-columns: 1fr 1.56fr;
+	grid-column-gap: 0.5rem;
+}
+.img_grid2 {
   display: grid;
   width: 94vw;
 	padding-bottom: 15px;
@@ -13,7 +19,6 @@
 }
 .image {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 @media (min-width: 1024px) {

@@ -255,6 +255,9 @@ h1 {
 	width: 40%;
 	transform: rotateY(180deg);
 	}
+.dot_class {
+	display: none;
+}
 p0 {
   font-size: 0.85em;
   line-height: 1.4em;
@@ -270,7 +273,7 @@ p2 {
 	font-family: 'IBM Plex Sans KR';
   font-size: 0.96em;
   line-height: 1.38em;
-  font-weight: 200;
+  font-weight: 300;
 }
 .info4_kor {
   grid-area: k;
@@ -337,7 +340,8 @@ iframe {
 'e k'
 	}
 	.dash {
-	display: flex;
+		display: none;
+	/*display: flex;*/
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
@@ -345,6 +349,23 @@ iframe {
 		margin-bottom: 0.25vh;
 		font-size: 0.1em;
 		/*border: 1px solid red;*/
+	}
+	.dot_class {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		margin-top: 25px;
+		margin-bottom: 10px;
+		/*border: 1px solid green;*/
+	}
+	.dot {
+		width: 6px;
+		height: 6px;
+		background-color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		transform: rotateZ(45deg);
+		/*border-radius: 50%;*/
 	}
 }
 @media (max-width: 767px) {
@@ -403,7 +424,8 @@ iframe {
 		/*border: 1px solid blue;*/
 	}
 	.dash {
-	display: flex;
+		display: none;
+	/*display: flex;*/
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
@@ -411,6 +433,23 @@ iframe {
 		margin-bottom: 0.25vh;
 		font-size: 0.1em;
 		/*border: 1px solid red;*/
+	}
+	.dot_class {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		margin-top: 25px;
+		margin-bottom: 0px;
+		/*border: 1px solid green;*/
+	}
+	.dot {
+		width: 6px;
+		height: 6px;
+		background-color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		transform: rotateZ(45deg);
+		/*border-radius: 50%;*/
 	}
 	h0 {
   font-size: 1rem;

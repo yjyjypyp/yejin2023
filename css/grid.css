@@ -1,8 +1,8 @@
+@charset "UTF-8";
 html {
 	max-width: 100%;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
-	font-family: 'Junction', 'PT Sans', sans-serif;
 }
 body {
 scroll-behavior: smooth;
@@ -10,8 +10,22 @@ scroll-behavior: smooth;
 	overflow-x: hidden;
   margin: 0;
   background: #000000;
-	font-family: 'Junction', 'PT Sans', sans-serif;
+	font-family: 'Junction', sans-serif;
   font-size: 15px;
+}
+/*크롬에만 적용할 스타일*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	body {
+		font-family: 'Junction', sans-serif;
+	}
+}
+/*사파리에만 적용할 스타일*/
+@media not all and (min-resolution:.001dpcm) {
+	@supports (-webkit-appearance:none) {
+		body {
+			font-family: 'PT Sans', sans-serif;
+		}
+	}
 }
 ::-webkit-scrollbar{
 	display: none;
@@ -45,7 +59,6 @@ scroll-behavior: smooth;
 	padding-right: 2vw;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 85%);
-	font-family: 'Junction', 'PT Sans', sans-serif;
 	z-index: 25;
 	/*border: 1px solid blue;*/
 }
@@ -123,7 +136,6 @@ pcopyright {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-	font-family: 'Junction', 'PT Sans', sans-serif;
 	font-size: 0.85rem;
 	line-height: 6px;
 }
@@ -148,7 +160,6 @@ pcopyright {
 	color: rgba(2255, 255, 255, 50%);
 	border: 0px solid rgba(255, 255, 255, 30%);
 	border-radius: 20px;
-	font-family: 'Junction', 'PT Sans', sans-serif;
 	text-align: center;
 	justify-content: center;
 	text-decoration: none;
@@ -202,13 +213,11 @@ h0 {
 	height: auto;
 	margin-top: 170px;
 	padding-bottom: 10vh;
-	font-family: 'Junction', 'PT Sans', sans-serif;
 }
 .discription {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 15px;
   margin-bottom: 4vh;
 	color: #ffffff;
@@ -218,7 +227,7 @@ h0 {
   width: 94vw;
   padding: 5px;
   grid-template-columns: repeat(18, 1fr);
-  grid-auto-rows: minmax(150px, auto);
+  /*grid-auto-rows: minmax(150px, auto);*/
   grid-gap: 1.8rem;
   grid-template-areas:
   't t t t t t n n e e e e e k k k k k'
@@ -264,13 +273,12 @@ p0 {
   font-weight: 300;
 }
 p1 {
-	
   font-size: 1em;
   line-height: 1.3em;
   font-weight: 300;
 }
 p2 {
-	font-family: 'IBM Plex Sans KR';
+	font-family: 'IBM Plex Sans KR', sans-serif;
   font-size: 0.96em;
   line-height: 1.38em;
   font-weight: 300;
@@ -400,9 +408,8 @@ iframe {
   display: grid;
   padding: 5px;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(100px, auto);
   grid-gap: 1.8rem;
-		align-items: center;
+align-items: center;
   grid-template-areas:
 't t'
 'e e'

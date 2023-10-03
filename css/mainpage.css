@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* animation */
 html {
   scroll-behavior: smooth;
@@ -12,6 +13,20 @@ body {
 }
 body[data-char='ragirl'] {
     background: #ff7200;
+}
+/*크롬에만 적용할 스타일*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	body {
+		font-family: 'Junction', sans-serif;
+	}
+}
+/*사파리에만 적용할 스타일*/
+@media not all and (min-resolution:.001dpcm) {
+	@supports (-webkit-appearance:none) {
+		body {
+			font-family: 'PT Sans', sans-serif;
+		}
+	}
 }
 .loader {
 	position: fixed;

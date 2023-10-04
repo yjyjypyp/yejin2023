@@ -222,7 +222,7 @@ h0 {
 	width: 50vw;
 }
 .info {
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 }
 .info1_title {
 	font-family: 'Junction', sans-serif;
@@ -374,7 +374,6 @@ iframe {
 	.info_grid {
   display: flex;
 		flex-direction: column;
-		border: 1px solid blue;
 
 }
 	.info1_title {

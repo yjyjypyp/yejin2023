@@ -361,6 +361,9 @@ iframe {
 	.icons {
 		display: none;
 	}
+	.menu_list {
+		margin-bottom: 0px;
+	}
 	.submenu {
 		display: none;
 		 justify-content: center;

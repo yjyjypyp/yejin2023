@@ -261,6 +261,7 @@ h0 {
 	margin-right: 1.8rem;
 }
 h1 {
+	font-family: 'Junction', sans-serif;
   font-size: 2em;
   line-height: 1.3em;
   font-weight: normal;
@@ -270,11 +271,13 @@ h1 {
 	width: 50%;
 }
 p0 {
+	font-family: 'Junction', sans-serif;
   font-size: 0.85em;
   line-height: 1.4em;
   font-weight: 300;
 }
 p00 {
+	font-family: 'Junction', sans-serif;
   font-size: 0.85em;
   line-height: 1.4em;
   font-weight: 300;
@@ -441,10 +444,14 @@ iframe {
 		display: inline-block;
 		/*border: 1px solid green;*/
 	}
-	.info_fold a:hover {
-	text-decoration: none;
+	.info_fold > div a:hover {
+	text-decoration: underline;
 	color: rgba(255, 255, 255, 100%);
 }
+	.info_fold > div a:visited {
+		text-decoration: none;
+		color: rgba(255, 255, 255, 100%);
+	}
 	.info_unfold {
 		display: none;
 	}

@@ -44,7 +44,7 @@ scroll-behavior: smooth;
 	padding-left: 2vw;
 	padding-right: 2vw;
 	color: #ffffff;
-	background-color: rgba(0, 0, 0, 85%);
+	background-color: rgba(0, 0, 0, 70%);
 	z-index: 25;
 	/*border: 1px solid blue;*/
 }
@@ -112,6 +112,7 @@ pcopyright {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+	margin-bottom: 6px;
 }
 .eachmenu {
   display: flex;
@@ -124,11 +125,11 @@ pcopyright {
   justify-content: flex-end;
   align-items: center;
 	font-size: 0.85rem;
-	line-height: 6px;
+	line-height: 7px;
 }
 .buttonboundary {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 	/*border: 1px solid purple;*/
 }
 .buttons {
@@ -139,7 +140,7 @@ pcopyright {
 .buttons_01 {
 	display: flex;
 	justify-content: flex-end;
-	/*border: 1px solid blue;*/
+	margin-bottom: 2px;
 }
 .btn {
 	padding: 4px 7px;
@@ -246,7 +247,7 @@ p1 {
 	font-family: 'Junction', sans-serif;
   font-size: 1em;
   line-height: 1.3em;
-  font-weight: 300;
+	font-weight: 300;
 }
 p2 {
 	font-family: 'IBM Plex Sans KR', sans-serif;
@@ -349,7 +350,7 @@ iframe {
 		font-size: 1.5rem;
 	}
 	.contents {
-		margin-top: 90px;
+		margin-top: 100px;
 		width: 96vw;
 	}
 	.discription {
@@ -370,6 +371,7 @@ iframe {
 	.buttons_01 {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 3px;
 	}
 	.info_grid {
   display: flex;

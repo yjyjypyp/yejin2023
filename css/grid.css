@@ -222,8 +222,19 @@ h0 {
   width: 94vw;
   padding: 5px;
 }
+.closetoggle {
+	display: flex;
+	justify-content: right;
+	margin-top: 0.5rem;
+}
+ptoggle {
+	color: rgba(255, 255, 255, 50%);
+}
+ptoggle:hover {
+	text-decoration: underline;
+	color: rgba(255, 255, 255, 100%);
+}
 .info_fold {
-	display: none;
 }
 .info_fold > div {
 	text-align: center;
@@ -362,8 +373,12 @@ iframe {
 		margin-right: 0px;
 		margin-bottom: 4vh;
 	}
+	.closetoggle {
+	justify-content: center;
+		margin-top: 2rem;
+	}
 	.info_fold {
-		display: none;
+		display: inline-block;
 	}
 	.infoengkor {
 	display: flex;
@@ -440,6 +455,10 @@ iframe {
 		width: 100%;
 		margin-bottom: 2vh;
 }
+	.closetoggle {
+	justify-content: center;
+		margin-top: 2rem;
+	}
 	.info_fold {
 		display: inline-block;
 		/*border: 1px solid green;*/
@@ -451,9 +470,6 @@ iframe {
 	.info_fold > div a:visited {
 		text-decoration: none;
 		color: rgba(255, 255, 255, 100%);
-	}
-	.info_unfold {
-		display: none;
 	}
 	.infoengkor {
 		flex-direction: column;

@@ -10,23 +10,10 @@ body {
   font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 12px;
     transition: background .5s;
+	font-family: 'Junction', sans-serif;
 }
 body[data-char='ragirl'] {
     background: #ff7200;
-}
-/*크롬에만 적용할 스타일*/
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	body {
-		font-family: 'Junction', sans-serif;
-	}
-}
-/*사파리에만 적용할 스타일*/
-@media not all and (min-resolution:.001dpcm) {
-	@supports (-webkit-appearance:none) {
-		body {
-			font-family: 'PT Sans', sans-serif;
-		}
-	}
 }
 .loader {
 	position: fixed;
@@ -138,6 +125,7 @@ body[data-char='ragirl'] {
 	}
 }
 pcopyright {
+	font-family: 'Junction', sans-serif;
 	font-size: 0.9em;
 }
 .wall-front-project{
@@ -171,6 +159,7 @@ pcopyright {
 	border: 0px;
 }
 ptitle {
+	font-family: 'Junction', sans-serif;
 	font-size: 8em;
 	color: #000000;
 }
@@ -178,11 +167,13 @@ ptitle:hover {
 	color: #ffffff;
 }
 ptitle2 {
+	font-family: 'Junction', sans-serif;
 	font-size: 24em;
 	color: #5cff57;
 	-webkit-text-stroke: 1px #000000;
 }
 ptitle3 {
+	font-family: 'Junction', sans-serif;
 	font-size: 16em;
 	color: #000000;
 }

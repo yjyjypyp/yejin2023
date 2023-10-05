@@ -234,8 +234,6 @@ ptoggle:hover {
 	text-decoration: underline;
 	color: rgba(255, 255, 255, 100%);
 }
-.info_fold {
-}
 .info_fold > div {
 	text-align: center;
 }
@@ -263,8 +261,6 @@ ptoggle:hover {
 	flex-direction: row;
 	width: 50vw;
 	text-align: left;
-}
-.info {
 }
 .info1_title {
 	width: 30vw;
@@ -373,12 +369,12 @@ iframe {
 		margin-right: 0px;
 		margin-bottom: 4vh;
 	}
+	.info_fold {
+		display: inline-block;
+	}
 	.closetoggle {
 	justify-content: center;
 		margin-top: 2rem;
-	}
-	.info_fold {
-		display: inline-block;
 	}
 	.infoengkor {
 	display: flex;
@@ -400,15 +396,6 @@ iframe {
 		border: 5px dashed #fff;
 		border-width: 1px 0 0 0;
 		border-color: #fff;
-	}
-	.dot {
-		display: none;
-		width: 6px;
-		height: 6px;
-		background-color: #FFFFFF;
-		border: 1px solid #FFFFFF;
-		transform: rotateZ(45deg);
-		/*border-radius: 50%;*/
 	}
 }
 @media (max-width: 767px) {
@@ -498,14 +485,6 @@ iframe {
 		border-width: 1px 0 0 0;
 		border-color: #fff;
 	}
-	.dot {
-		display: none;
-		width: 6px;
-		height: 6px;
-		background-color: #FFFFFF;
-		transform: rotateZ(45deg);
-		/*border-radius: 50%;*/
-	}
 	h0 {
   font-size: 1rem;
 	}
@@ -513,6 +492,7 @@ iframe {
 		font-size: 1.6em;
  		 line-height: 1.2em;
 		text-align: center;
+	}
 	p1 {
   	font-size: 1em;
   	line-height: 1.3em;

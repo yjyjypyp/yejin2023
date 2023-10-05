@@ -98,8 +98,8 @@ input[id="popup2"] + label + div > label {
 }
 .indextext {
 	position: absolute;
-	top: 80%;
-	left: 63%;
+	top: 9%;
+	right: 5%;;
 	/*--border: 1px solid green;--*/
 }
 .close {

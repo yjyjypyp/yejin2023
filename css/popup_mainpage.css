@@ -248,7 +248,7 @@ pbody {
 	padding-right: 5vw;
 	padding-top: 8vh;
 	padding-bottom: 8vh;
-	background: #ff351a;
+	background: #60FF21;
 	opacity: 95%;
 	border-radius: 100px 100px 100px 100px;
 	z-index: 20;
@@ -285,6 +285,15 @@ pbody {
 		margin-bottom: 2vh;
 		/*border: 1px solid blue;*/
 	}
+	.abouttext {
+		top: 73%;
+	left: 5%;
+}
+	.project {
+	top: 84.5%;
+	left: 18%;
+	/*--border: 1px solid green;--*/
+}
 	.aboutline {
 		height: 100%;
 	}

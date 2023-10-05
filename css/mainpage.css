@@ -6,7 +6,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-  background: linear-gradient(to bottom, #ffffff, #ceff55, #ceff55, #ceff55, #ceff55, #ceff55, #ceff55, #ffffff);
+  background: linear-gradient(to bottom, #ffffff, #ff351a, #ff351a, #ff351a, #ff351a, #ff351a, #ff351a, #ffffff);
   font-family: 'Junction', 'PT Sans', sans-serif;
   font-size: 12px;
     transition: background .5s;
@@ -56,22 +56,22 @@ body[data-char='ragirl'] {
     top: 0;
     width: 100vw;
     height: 100vh;
-	background: #ceff55;
+	background: #ff351a;
     border: 1.5px solid #000000;
 }
 .wall-front {
 	width: 100%;
-	background: #ceff55;
+	background: #ff351a;
 	transform: translateZ(-5vw);
 }
 .wall-left {
     width: 100%;
-	background: linear-gradient(to left, #ceff55, #ceff55, #ceff55, #ceff55, rgba(255, 255, 255, 100%), rgba(255, 255, 255, 100%));
+	background: linear-gradient(to left, #ff351a, #ff351a, #ff351a, #ff351a, rgba(255, 255, 255, 100%), rgba(255, 255, 255, 100%));
     transform: rotateY(90deg) translateZ(-50vw);
 }
 .wall-right {
     width: 100%;
-	background: linear-gradient(to left, #ceff55, #ceff55, #ceff55, #ceff55, rgba(255, 255, 255, 100%), #79ffff);
+	background: linear-gradient(to left, #ff351a, #ff351a, #ff351a, #ff351a, rgba(255, 255, 255, 100%), #79ffff);
     transform: rotateY(90deg) translateZ(50vw); 
 }
 .wall-top {
@@ -228,21 +228,66 @@ ptitle3 {
 }
 @media (max-width: 767px) {
 	/*-mobile css-*/
+	.wall-left {
+    width: 100%;
+	background: linear-gradient(to left, #ff351a, rgba(255, 255, 255, 50%));
+    transform: rotateY(90deg) translateZ(-50vw) translateX(24vw);
+}
+	.wall-right {
+    width: 100%;
+	background: linear-gradient(to left, #ff351a, rgba(255, 255, 255, 50%));
+    transform: rotateY(90deg) translateZ(50vw) translateX(24vw); 
+}
 	.wall-front {
 	width: 100%;
-	transform: translateZ(-50vw);
+	transform: translateZ(-74vw);
+	}
+	.extrahello {
+		display: none;
+	}
+	.extracomma {
+		position: absolute;
+		left: 41%;
+		top: 18%;
+	}
+	.line0 {
+		position: absolute;
+		width: 40%;
+		left: 42%;
+		top: 26%;
+		transform: rotateZ(-45deg);
+		border-bottom: 1px solid #000000;;
+	}
+	.garo {
+		position: absolute;
+		left: 67%;
+		top: 32%;
+	}
+	pgaro {
+		font-size: 1rem;
+		line-height: 1.3rem;
+	}
+	.category {
+		position: absolute;
+		display: inline-block;
+		top: -3%;
+		left: 12%;
+		font-weight: 300;
 	}
 	ptitle {
-	font-size: 5em;
+	font-size: 6em;
 	color: #000000;
 	}
 	ptitle:hover {
 	color: #ffffff;
 	}
 	ptitle2 {
-	font-size: 10em;
-	color: #5cff57;
-	-webkit-text-stroke: 1px #000000;
+	font-size: 6em;
+	color: #ff351a;
+	-webkit-text-stroke: 1.3px #000000;
+	}
+	ptitle2:hover {
+		color: #000000;
 	}
 	ptitle3 {
 	font-size: 5em;

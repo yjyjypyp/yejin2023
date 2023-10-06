@@ -228,7 +228,8 @@ pbody {
 	grid-gap: 5vw;
   	flex-direction: row;
  	 justify-content: center;
- 	 align-items: center;
+ 	 align-items: left;
+		border: 1px solid blue;
 	  grid-template-areas:
  	 'b'
 	'a'	

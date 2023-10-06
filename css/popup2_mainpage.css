@@ -49,7 +49,7 @@ input[id="popup2"] + label + div > div {
 	padding-left: 5vw;
 	padding-right: 5vw;
 	padding-top: 8vh;
-	padding-bottom: 8vh;
+	padding-bottom: 10vh;
 	background: #009619;
 	opacity: 95%;
 	border-radius: 800px 800px 0px 0px;
@@ -113,7 +113,6 @@ input[id="popup2"] + label + div > label {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
 .bluepopup ::-webkit-scrollbar {
 	display: none;
@@ -123,7 +122,6 @@ input[id="popup2"] + label + div > label {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-top: 20vh;
 }
 .indexhead {
 	display: flex;
@@ -211,16 +209,17 @@ pbody3 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 85vw;
-	height: 85vh;
+		padding-top: 0;
+		padding-bottom: 0;
 	padding-left: 5vw;
-	padding-right: 5vw;
-	padding-bottom: 8vh;
 	opacity: 95%;
 	border-radius: 800px 800px 0px 0px;
 	z-index: 30;
 		overflow: auto;
 }
 	.indexwhole {
+		margin-top: 10vh;
+		margin-bottom: 6vh;
 		overflow: auto;
 	}
 	.indexin {

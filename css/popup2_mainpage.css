@@ -205,10 +205,11 @@ pbody3 {
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
 	position: absolute;
-	top: 48.5%;
+	top: 46%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 85vw;
+		height: 80%;
 		padding-top: 0;
 		padding-bottom: 0;
 	padding-left: 5vw;
@@ -218,8 +219,8 @@ pbody3 {
 		overflow: auto;
 }
 	.indexwhole {
-		margin-top: 10vh;
-		margin-bottom: 6vh;
+		margin-top: 15vh;
+		margin-bottom: 7.5vh;
 		overflow: auto;
 	}
 	.indexin {

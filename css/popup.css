@@ -206,11 +206,11 @@ pbody {
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
 	position: absolute;
-	top: 48.5%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 95vw;
-	height: 90vh;
+	height: 85vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	padding-top: 8vh;
@@ -229,7 +229,7 @@ pbody {
   	flex-direction: row;
  	 justify-content: center;
  	 align-items: left;
-		border: 1px solid blue;
+		/*border: 1px solid blue;*/
 	  grid-template-areas:
  	 'b'
 	'a'	

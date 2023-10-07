@@ -219,8 +219,8 @@ pbody3 {
 		overflow: auto;
 }
 	.indexwhole {
-		margin-top: 15vh;
-		margin-bottom: 7.5vh;
+		margin-top: 20vh;
+		margin-bottom: 9vh;
 		overflow: auto;
 	}
 	.indexin {
@@ -238,6 +238,7 @@ pbody3 {
 	justify-content: center;
 	align-items: center;
 	margin-top: 0vh;
+		padding-bottom: 5vh;
 }
 	.indexhead {
 		padding-right: 0px;

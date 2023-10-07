@@ -218,11 +218,12 @@ pbody3 {
 	z-index: 30;
 }
 	.indexwhole {
-		margin-top: 15vh;
+		display: flex;
+		padding-top: 15vh;
 	}
 	.indexbody {
 		width: 100%;
-		height: 46vh;
+		height: 50vh;
 		align-items: center;
 		justify-content: center;
 		overflow: auto;

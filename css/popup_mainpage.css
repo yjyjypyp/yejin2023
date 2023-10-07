@@ -232,11 +232,11 @@ pbody {
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
 	position: absolute;
-	top: 50%;
+	top: 47%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 85vw;
-	height: 80vh;
+	width: 90vw;
+	height: 86vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	padding-top: 8vh;

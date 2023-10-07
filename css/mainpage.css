@@ -233,18 +233,18 @@ ptitle3 {
 @media (max-width: 767px) {
 	/*-mobile css-*/
 	.wall-left {
-    width: 100%;
+    width: 120%;
 	background: linear-gradient(to left, #ff351a, rgba(255, 255, 255, 50%));
-    transform: rotateY(90deg) translateZ(-50vw) translateX(24vw);
+    transform: rotateY(90deg) translateZ(-60vw) translateX(24vw);
 }
 	.wall-right {
-    width: 100%;
+    width: 120%;
 	background: linear-gradient(to left, #ff351a, rgba(255, 255, 255, 50%));
-    transform: rotateY(90deg) translateZ(50vw) translateX(24vw); 
+    transform: rotateY(90deg) translateZ(40vw) translateX(24vw); 
 }
 	.wall-front {
 	width: 100%;
-	transform: translateZ(-74vw);
+	transform: translateZ(-70vw);
 	}
 	.extrahello {
 		display: none;

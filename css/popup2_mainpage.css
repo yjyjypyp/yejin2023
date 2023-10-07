@@ -216,12 +216,17 @@ pbody3 {
 	opacity: 95%;
 	border-radius: 800px 800px 0px 0px;
 	z-index: 30;
-		overflow: auto;
 }
 	.indexwhole {
-		margin-top: 20vh;
-		margin-bottom: 9vh;
+		margin-top: 15vh;
+	}
+	.indexbody {
+		width: 100%;
+		height: 46vh;
+		align-items: center;
+		justify-content: center;
 		overflow: auto;
+		
 	}
 	.indexin {
 		justify-content: flex-start;
@@ -239,6 +244,8 @@ pbody3 {
 	align-items: center;
 	margin-top: 0vh;
 		padding-bottom: 5vh;
+		padding-left: 3vw;
+		padding-right: 3vw;
 }
 	.indexhead {
 		padding-right: 0px;

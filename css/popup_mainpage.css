@@ -62,7 +62,7 @@ input[id="popup"] + label + div + div > div > label {
 	right: 0px;
 	transform: translate(25%, -10%);
 	padding: 20px;
-	background: rgba(0, 0, 0, 0%);
+	background: (0, 0, 0, 0);
 	border-radius: 100%;
 	z-index: 15;
 }
@@ -244,6 +244,9 @@ pbody {
 	opacity: 95%;
 	border-radius: 100px 100px 100px 100px;
 	z-index: 20;
+}
+	input[id="popup"] + label + div + div > label {
+	background: rgba(0, 0, 0, 60%);
 }
 	.about_grid {
 	display: grid;

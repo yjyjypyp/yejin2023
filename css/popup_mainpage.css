@@ -232,7 +232,7 @@ pbody {
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
 	position: absolute;
-	top: 47%;
+	top: 46%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 90vw;

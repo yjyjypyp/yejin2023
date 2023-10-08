@@ -46,7 +46,7 @@ input[id="popup2"] + label + div > div {
 	padding-left: 5vw;
 	padding-right: 5vw;
 	padding-top: 8vh;
-	padding-bottom: 8vh;
+	padding-bottom: 10vh;
 	background: blue;
 	opacity: 95%;
 	border-radius: 800px 800px 0px 0px;
@@ -63,7 +63,7 @@ input[id="popup2"] + label + div > div > label {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	transform: translate(75%, 74vh);
+	transform: translate(98%, 74vh);
 	padding: 20px;
 	background: rgba(0, 0, 0, 0%);
 	border-radius: 100%;
@@ -85,17 +85,6 @@ input[id="popup2"] + label + div > label {
 	background: rgba(0, 0, 0, .7);
 	z-index: 25;
 }
-.close:hover {
-	cursor: pointer; 
-	color: #ff351a;
-	font-weight: 500;
-}
-.line {
-	/*border: 1px solid black;*/
-}
-.indextext {
-	/*--border: 1px solid green;--*/
-}
 .close {
 }
 .close span {
@@ -116,16 +105,23 @@ ptitle {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	overflow: auto;
 }
+.bluepopup ::-webkit-scrollbar {
+	display: none;
+}
+.indexbody {
+		width: 100%;
+		height: 50vh;
+		overflow: auto;
+	}
 .indexlist {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-top: 20vh;
-	overflow: auto;
+	margin-top: 15vh;
+		padding-left: 3vw;
+		padding-right: 3vw;
 }
 .indexhead {
 	display: flex;
@@ -147,8 +143,7 @@ ptitle {
 }
 .indexin {
 	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
+	align-items: center;
 	padding-right: 5px;
 	padding-left: 5px;
 	border-right: 0.5px solid white;
@@ -157,15 +152,19 @@ ptitle {
 .indexblank {
 	height: 10px;
 }
+.indextitle {
+	justify-content: flex-start;
+}
 .indextitle a {
 	display: flex;
-	align-items: flex-end;
+	text-decoration: none;
 }
 .indextitle a :visited{
 	color: beige;
+	text-decoration: none;
 }
 .indextitle a:hover{
-	background-color: yellowgreen;
+	background-color: greenyellow;
 	font-style: italic;
 	text-decoration: none;
 }
@@ -174,20 +173,23 @@ ptitle {
 }
 .indexcategory {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
-.indexyear {
-	
+hhead {
+	font-size: 0.8rem;
 }
 pbody2 {
-	color: beige;
+	color: beige;*/
 	font-size: 0.8rem;
+	line-height: 1rem;
 	font-weight: 100;
 }
 pbody3 {
 	color: beige;
 	font-size: 0.8rem;
+	line-height: 1rem;
 	font-weight: 100;
+	text-align: left;
 }
 @media (min-width: 1024px) {
 	/*--pc css--*/
@@ -197,48 +199,66 @@ pbody3 {
 	}
 @media (max-width: 767px) {
 	/*-mobile css-*/
-	input[id="popup2"] + label {
-		padding-left: 3.5vw;
-	padding-right: 7.5vw;
-}
 	input[id="popup2"] + label + div > div {
 	/*--블루 전체 팝업--*/
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
 	position: absolute;
-	top: 48.5%;
+	top: 46%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 80vw;
-	height: 80vh;
-	padding-top: 35vh;
-	padding-bottom: 8vh;
-	background: blue;
+	width: 85vw;
+		height: 80%;
+		padding-top: 0;
+		padding-bottom: 0;
+	padding-left: 5vw;
 	opacity: 95%;
 	border-radius: 800px 800px 0px 0px;
 	z-index: 30;
 }
+	input[id="popup2"] + label + div > label {
+	background: rgba(0, 0, 0, 70%);
+}
+	input[id="popup2"] + label + div > div > label {
+	/*--close--*/
+	transform: translate(55px, 74vh);
+	}
+	.indexbody {
+		width: 100%;
+		height: 50vh;
+		overflow: auto;
+	}
+	.indexin {
+		justify-content: flex-start;
+	}
+	.indexnumbering {
+		justify-content: flex-end;
+	}
+	.indexyear {
+		justify-content: flex-end;
+	}
 	.indexlist {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 10vh;
-	overflow: auto;
-	}
+	margin-top: 15vh;
+		padding-left: 3vw;
+		padding-right: 3vw;
+}
 	.indexhead {
 		padding-right: 0px;
 		transform: rotateZ(0deg);
-		padding-top: 3px;
+		padding-top: 5px;
 		margin-bottom: 5vh;
+	}
+	.indexbody {
+		overflow: scroll;
 	}
 	.indexgrid {
 	width: 100%;
 	height: 100%;
-		padding-left: 5%;
-		padding-right: 5%;
 	grid-row-gap: 1vw;
 	grid-column-gap: 1vw;
-		justify-content: center;
+		overflow: scroll;
 	}
-}

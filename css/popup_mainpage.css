@@ -45,7 +45,7 @@ input[id="popup"] + label + div + div > div {
 	padding-top: 8vh;
 	padding-bottom: 8vh;
 	background: #ff0092;
-	opacity: 95%;
+	opacity: 100%;
 	border-radius: 100px 100px 100px 100px;
 	z-index: 30;
 }
@@ -87,14 +87,14 @@ input[id="popup"] + label + div + div > label {
 }
 .abouttext {
 	position: absolute;
-	top: 46%;
-	left: 58%;
+	top: 50%;
+	right: 5%;
 	/*--border: 1px solid green;--*/
 }
 .project {
 	position: absolute;
 	top: 68%;
-	left: 72%;
+	right: 10%;
 	/*--border: 1px solid green;--*/
 }
 .project a:link {

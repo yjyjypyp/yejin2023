@@ -45,7 +45,7 @@ input[id="popup"] + label + div > div {
 	padding-top: 8vh;
 	padding-bottom: 8vh;
 	background: #ff351a;
-	opacity: 95%;
+	opacity: 100%;
 	border-radius: 100px 100px 100px 100px;
 	z-index: 20;
 }
@@ -177,7 +177,7 @@ pbody {
 	line-height: 1rem;
 }
 .innerpassage {
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	/*border: 1px solid green;*/
 }
@@ -237,7 +237,7 @@ pbody {
 		flex-direction: row;
 	}
 	.innerpassage {
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	margin-left: 3vw;
 	/*border: 1px solid green;*/

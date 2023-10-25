@@ -156,7 +156,7 @@ input[id="popup"] + label + div + div > label {
 	text-decoration: none;
 	background-color: #000000;
 	border: 1.5px solid #000000;
-	color: #ff351a;
+	color: #ff0092;
 	cursor: pointer;
 }
 .about1 {
@@ -206,7 +206,7 @@ pbody {
 	line-height: 1rem;
 }
 .innerpassage {
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	/*border: 1px solid green;*/
 }
@@ -271,7 +271,7 @@ pbody {
 		margin-right: 7vw;
 	}
 	.innerpassage {
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	margin-left: 3vw;
 	/*border: 1px solid green;*/

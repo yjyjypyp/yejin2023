@@ -22,7 +22,7 @@
          url("../font/junction/junction-light.ttf") format('truetype'),
 		url("../font/junction/Junction-light.otf") format('opentype'),
          url("../font/junction/junction-light.svg#junctionlight") format('svg');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 
 }
